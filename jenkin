@@ -6,7 +6,7 @@ pipeline {
     stages { 
         stage('Checkout') { 
             steps { 
-                git branch: 'master', url: 'https://github.com/mtechkiran/SimpleCalci.git'
+                git branch: 'master', url: 'https://github.com/MehakBandhral/Demo7.git'
             } 
         } 
         stage('Build') { 
@@ -21,7 +21,7 @@ pipeline {
         } 
         stage('Run Application') { 
             steps { 
-                sh 'java -jar target/SimpleCalci-0.0.1-SNAPSHOT.jar' // fixed dash before 'jar'
+                sh 'java -jar target/Demo7-0.0.1-SNAPSHOT.jar' // fixed dash before 'jar'
             }
         }
     } // <- closes stages
